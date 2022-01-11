@@ -1,0 +1,2 @@
+#!/bin/bash
+read varfilename | cat $varfilename | sort | uniq | pr | lpr
