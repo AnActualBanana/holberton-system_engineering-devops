@@ -1,2 +1,2 @@
 #!/bin/bash
-read varfilename | cat $varfilename | sort | uniq | cat
+sort | uniq -u
