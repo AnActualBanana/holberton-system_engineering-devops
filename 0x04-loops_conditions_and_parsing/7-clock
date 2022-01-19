@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#this loop prints each hour on the hour, and each minute between hours, for 12 hours and 59 minutes
+hour=0
+minute=0
+while (( ((hour <= 12))&&((minute <= 59)) ))
+do
+	if ((minute == 0)); then echo "Hour: $hour"; ((minute++))
+	elif ((minute != 59)); then echo "$minute"; ((minute++))
+	elif ((minute == 59)); then echo "$minute"; ((minute=0)); ((hour++))
+	fi
+done
