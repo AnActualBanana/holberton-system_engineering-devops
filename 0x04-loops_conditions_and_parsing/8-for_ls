@@ -2,6 +2,5 @@
 #
 for i in 1
 do
-	ls | sed -n '-*p'
 
 done
