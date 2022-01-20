@@ -2,5 +2,6 @@
 #This script will display a string indefinitely
 while :
 do
-echo "To infinity and beyond"
+    echo "To infinity and beyond"
+    sleep 2
 done
