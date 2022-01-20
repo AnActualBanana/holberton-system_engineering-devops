@@ -2,7 +2,7 @@
 #This script will display 'to infinity and beyond' indefinitely, and display 'I am invincible!!!' when it receives a SIGTERM signal
 while :
 do
+        trap 'echo "I am Invincible!!!"' SIGTERM
 	echo "To infinity and beyond"
 	sleep 2
 done
-trap SIGTERM echo "I am invincible!!!"
