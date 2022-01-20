@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#This script will stop the process in 4-to_infinity_and_beyond without using the kill or killall command
+pkill -1 -f "7-highlander"
